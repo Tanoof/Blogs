@@ -1,4 +1,4 @@
-curl -I -u tanoof:1172239a0a9d849f1cb594c349388628f3 http://localhost:8080/job/FirstJob/build?token=test
+curl -I -u tanoof:1172239a0a9d849f1cb594c349388628f3 http://6930dbd9.ngrok.io/job/FirstJob/build?token=test
 
 
-curl -X POST http://localhost:8080/job/FirstJob/build --user tanoof:1172239a0a9d849f1cb594c349388628f3
+curl -X POST http://6930dbd9.ngrok.io/job/FirstJob/build --user tanoof:1172239a0a9d849f1cb594c349388628f3
