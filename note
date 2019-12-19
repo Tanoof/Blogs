@@ -1,0 +1,98 @@
+git init 					-initialize repository- create a folder .git
+git add . 					-add to repository
+git commit -am -"messege" 	- taking a snapshot of the repository.
+git status 					- show you if anything has not been commited yet
+git log 					-display what has been commited
+git pull		
+git push
+git push origine -u master
+
+git branch
+git log --oneline
+git checkout master
+git branch -D accenture
+git branch -v
+git reflog
+git push --all -u
+git checkout -b anand remote/origine/feture 
+$ git revert ca5854d
+git reset
+git push 
+git cheery-pick
+
+**********pull = fetch + merge************
+gradle build tool
+javac
+java --version	-check java version
+mvn --version	-check mvn version
+mvn package		-install mvn package
+***************
+code coverage*
+sonarqube
+http://localhost:8080/	-default jenkins port
+runduck	-automation tool for operationguys
+Martin Fowler -computer scientist -vedio
+PMD		-soure code analizer
+mvn repository
+
+
+
+**************************Docker command**************************
+docker run ps ->running container
+docker run ps -a ->all container
+"docker images" / "docker image ls" 
+docker run -i -t alpine /bin/sh		//-i ->interactive , -t ->tty, /bin/sh -> run as a shell
+ctrl p + ctrl q -> get out from container/detached
+docker attach 32b7d24db92a -? get into the container
+docker pause 32b7d24db92a ->pause container
+docker unpause 32b7d24db92a ->resume container
+docker run -it --name PGalpine alpine /bin/sh	->
+docker start PGalpine	->
+exit ->
+docker volume create kolkata
+docker volume ls
+docker inspect kolkata
+ more  Dockerfile
+docker build . -t prithaalpine
+docker images
+docker tag prithaalpine:latest prithagoswami/hello
+
+****overlay file system************
+
+
+_____________________________________________________________________________________________________________________
+git clone https://github.com/rchidana/facebooc.git		//clone from git
+
+docker run -itd --name fb -p 8085:16000 ubuntu bash		//creating empty container
+docker ps
+docker cp facebooc/ fb:/opt								//copy facebook repo to fb
+docker attach fb										//get into "fb" container	
+within fb container----run below
+apt-get update
+apt-get install -yq build-essential make libsqlite3-dev sqlite3
+cd facebooc
+make all
+cd facebooc
+bin/facebooc
+_________________________________________________________________________________________________________________
+
+
+docker ps
+docker swarm init --advertise-addr 54.91.222.154 		//genarating token by advertising the pubic ip to request to join in the node
+docker node ls
+docker service create --replicas 2 -p 80:80 --name web nginx  		//creating web service replicas
+docker service ls
+docker service ps web
+docker service scale web=4
+docker node update --availability drain Ubuntu2
+docker node ls
+docker service ps web
+docker node update --availability active Ubuntu2
+ docker service rm web
+docker swarm leave
+docker swarm leave --force
+docker service create --name vote --replicas 4 -p 8080:80 instavote/vote:movies
+docker service update --image instavote/vote:indent vote
+docker service update --update-parallelism
+
+
