@@ -1,0 +1,19 @@
+curl -I -u tanoof:1172239a0a9d849f1cb594c349388628f3 http://6930dbd9.ngrok.io/job/FirstJob/build?token=test
+
+
+curl -X POST http://6930dbd9.ngrok.io/job/FirstJob/build --user tanoof:1172239a0a9d849f1cb594c349388628f3
+
+
+
+ docker swarm join --token SWMTKN-1-1wx3p5do9wv7b8yggdg9hto8lj9pzgk05jx1493auj5thwvz0v-1gg8s8u040mxrufom20tsf3fo 52.172.32.236:2377
+
+
+docker service create --name vote --replicas 4 -p 8080:80 instavote/vote:movies
+
+
+docker service update --image instavote/vote:indent vote
+
+docker service update --update-parallelism
+
+
+
