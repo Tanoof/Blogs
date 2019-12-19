@@ -1,0 +1,784 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2019.12.19 11:40:36 =~=~=~=~=~=~=~=~=~=~=~=
+
+]0;ubuntu@ip-172-31-39-68: ~ubuntu@ip-172-31-39-68:~$ 
+]0;ubuntu@ip-172-31-39-68: ~ubuntu@ip-172-31-39-68:~$ docker --versionsudo apt-get install docker.io -y[1P-y[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Pdocker --version
+Docker version 18.09.7, build 2d0083d
+]0;ubuntu@ip-172-31-39-68: ~ubuntu@ip-172-31-39-68:~$ du[K[Ksudo systemctl status [K/st[K[K[K
+[?1h=● ip-172-31-39-68[m
+    State: running[m
+     Jobs: 0 queued[m
+   Failed: 0 units[m
+    Since: Thu 2019-12-19 05:33:54 UTC; 39min ago[m
+   CGroup: /[m
+           ├─init.scope[m
+           │ └─1 /sbin/init[m
+           ├─system.slice[m
+           │ ├─mdadm.service[m
+           │ │ └─1206 /sbin/mdadm --monitor --pid-file /run/mdadm/monitor.pid --daemonise --scan --syslog[m
+           │ ├─dbus.service[m
+           │ │ └─1123 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation[m
+           │ ├─cron.service[m
+           │ │ └─1160 /usr/sbin/cron -f[m
+           │ ├─lvm2-lvmetad.service[m
+           │ │ └─457 /sbin/lvmetad -f[m
+           │ ├─iscsid.service[m
+           │ │ ├─1110 /sbin/iscsid[m
+           │ │ └─1111 /sbin/iscsid[m
+           │ ├─unattended-upgrades.service[m
+           │ │ └─1259 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal[m
+           │ ├─networking.service[m
+           │ │ └─935 /sbin/dhclient -1 -v -pf /run/dhclient.eth0.pid -lf /var/lib/dhcp/dhclient.eth0.leases -I -df /var/lib/dhcp/dhclient6.eth0.leases eth0[m
+           │ ├─accounts-daemon.service[m
+           │ │ └─1163 /usr/lib/accountsservice/accounts-daemon[m
+           │ ├─system-serial\x2dgetty.slice[m
+           │ │ └─serial-getty@ttyS0.service[m
+           │ │   └─1308 /sbin/agetty --keep-baud 115200 38400 9600 ttyS0 vt220[m
+           │ ├─atd.service[m
+           │ │ └─1119 /usr/sbin/atd -f[m
+           │ ├─systemd-journald.service[m
+           │ │ └─420 /lib/systemd/systemd-journald[m
+           │ ├─snapd.service[m
+           │ │ └─1560 /usr/lib/snapd/snapd[m
+           │ ├─systemd-timesyncd.service[m
+           │ │ └─664 /lib/systemd/systemd-timesyncd[m
+           │ ├─ssh.service[m
+           │ │ └─1345 /usr/sbin/sshd -D[m
+           │ ├─systemd-logind.service[m
+           │ │ └─1132 /lib/systemd/systemd-logind[m
+           │ ├─system-getty.slice[m
+           │ │ └─getty@tty1.service[m
+[7mlines 1-43[27m[K[K           │ │   └─1311 /sbin/agetty --noclear tty1 linux[m
+           │ ├─snap.amazon-ssm-agent.amazon-ssm-agent.service[m
+           │ │ └─1759 /snap/amazon-ssm-agent/1455/amazon-ssm-agent[m
+           │ ├─systemd-udevd.service[m
+           │ │ └─488 /lib/systemd/systemd-udevd[m
+           │ ├─polkitd.service[m
+           │ │ └─1222 /usr/lib/policykit-1/polkitd --no-debug[m
+           │ ├─containerd.service[m
+           │ │ └─21856 /usr/bin/containerd[m
+           │ ├─rsyslog.service[m
+           │ │ └─1169 /usr/sbin/rsyslogd -n[m
+           │ ├─docker.service[m
+           │ │ └─22060 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock[m
+           │ ├─lxcfs.service[m
+           │ │ └─1116 /usr/bin/lxcfs /var/lib/lxcfs/[m
+           │ └─acpid.service[m
+           │   └─1146 /usr/sbin/acpid[m
+           └─user.slice[m
+             └─user-1000.slice[m
+               ├─session-1.scope[m
+               │ ├─ 1859 sshd: ubuntu [priv] [m
+               │ ├─ 1920 sshd: ubuntu@pts/0  [m
+               │ ├─ 1924 -bash[m
+               │ ├─22392 sudo systemctl status[m
+               │ ├─22393 systemctl status[m
+               │ └─22394 systemctl status[m
+               └─user@1000.service[m
+                 └─init.scope[m
+                   ├─1861 /lib/systemd/systemd --user[m
+                   └─1864 (sd-pam)  [m
+[7mlines 31-73/73 (END)[27m[K[K[K[7mlines 31-73/73 (END)[27m[K[K[K[7mlines 31-73/73 (END)[27m[K[K[K[7mlines 31-73/73 (END)[27m[K[K[K[7mlines 31-73/73 (END)[27m[K[K[K[7mlines 31-73/73 (END)[27m[K[K[K[7mlines 31-73/73 (END)[27m[K[K[K[7mlines 31-73/73 (END)[27m[K[K[K[7mlines 31-73/73 (END)[27m[K[K[K[7mlines 31-73/73 (END)[27m[K[K[K[7mlines 31-73/73 (END)[27m[K[K[K[7mlines 31-73/73 (END)[27m[K[K[K[7mlines 31-73/73 (END)[27m[K[K[K[7mlines 31-73/73 (END)[27m[K[K[K[7mlines 31-73/73 (END)[27m[K[K[K[7mlines 31-73/73 (END)[27m[K[K[K[7mlines 31-73/73 (END)[27m[K[K[K[7mlines 31-73/73 (END)[27m[K[K[K[7mlines 31-73/73 (END)[27m[K[K[K[7mlines 31-73/73 (END)[27m[K[K[K[7mlines 31-73/73 (END)[27m[K[K[K[7mlines 31-73/73 (END)[27m[K[K[K[7mlines 31-73/73 (END)[27m[K[K[K[7mlines 31-73/73 (END)[27m[K[K[K[7mlines 31-73/73 (END)[27m[K[K[K[7mlines 31-73/73 (END)[27m[K
+]0;ubuntu@ip-172-31-39-68: ~ubuntu@ip-172-31-39-68:~$ 
+]0;ubuntu@ip-172-31-39-68: ~ubuntu@ip-172-31-39-68:~$ 
+]0;ubuntu@ip-172-31-39-68: ~ubuntu@ip-172-31-39-68:~$ sudo systemctl status docker.s
+[?1h=● docker.s.service[m
+   Loaded: not-found (Reason: No such file or directory)[m
+   Active: inactive (dead)[m
+[K[?1l>]0;ubuntu@ip-172-31-39-68: ~ubuntu@ip-172-31-39-68:~$ sudo systemctl status docker.s[K[K
+[?1h=[0;1;32m●[0m docker.service - Docker Application Container Engine[m
+   Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)[m
+   Active: [0;1;32mactive (running)[0m since Thu 2019-12-19 06:09:55 UTC; 4min 50s ago[m
+     Docs: https://docs.docker.com[m
+ Main PID: 22060 (dockerd)[m
+   CGroup: /system.slice/docker.service[m
+           └─22060 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock[m
+[m
+Dec 19 06:09:55 ip-172-31-39-68 dockerd[22060]: time="2019-12-19T06:09:55.349314827Z" level=warning msg="Your kernel does not support cgroup rt period"[m
+Dec 19 06:09:55 ip-172-31-39-68 dockerd[22060]: time="2019-12-19T06:09:55.349508777Z" level=warning msg="Your kernel does not support cgroup rt runtime"[m
+Dec 19 06:09:55 ip-172-31-39-68 dockerd[22060]: time="2019-12-19T06:09:55.350070170Z" level=info msg="Loading containers: start."[m
+Dec 19 06:09:55 ip-172-31-39-68 dockerd[22060]: time="2019-12-19T06:09:55.491479445Z" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0[m
+Dec 19 06:09:55 ip-172-31-39-68 dockerd[22060]: time="2019-12-19T06:09:55.550938614Z" level=info msg="Loading containers: done."[m
+Dec 19 06:09:55 ip-172-31-39-68 dockerd[22060]: time="2019-12-19T06:09:55.582008846Z" level=warning msg="failed to retrieve runc version: unknown output format: runc ve[m
+Dec 19 06:09:55 ip-172-31-39-68 dockerd[22060]: time="2019-12-19T06:09:55.588293728Z" level=info msg="Docker daemon" commit=2d0083d graphdriver(s)=overlay2 version=18.0[m
+Dec 19 06:09:55 ip-172-31-39-68 dockerd[22060]: time="2019-12-19T06:09:55.588585372Z" level=info msg="Daemon has completed initialization"[m
+Dec 19 06:09:55 ip-172-31-39-68 systemd[1]: Started Docker Application Container Engine.[m
+Dec 19 06:09:55 ip-172-31-39-68 dockerd[22060]: time="2019-12-19T06:09:55.618463802Z" level=info msg="API listen on /var/run/docker.sock"[m
+[7mlines 1-18/18 (END)[27m[K[K[K[7mlines 1-18/18 (END)[27m[K[K[?1l>]0;ubuntu@ip-172-31-39-68: ~ubuntu@ip-172-31-39-68:~$ 
+]0;ubuntu@ip-172-31-39-68: ~ubuntu@ip-172-31-39-68:~$ 
+]0;ubuntu@ip-172-31-39-68: ~ubuntu@ip-172-31-39-68:~$ sudo usermod -aG docker ubuntu
+]0;ubuntu@ip-172-31-39-68: ~ubuntu@ip-172-31-39-68:~$ 
+]0;ubuntu@ip-172-31-39-68: ~ubuntu@ip-172-31-39-68:~$ $useer[K[K[Ker
+]0;ubuntu@ip-172-31-39-68: ~ubuntu@ip-172-31-39-68:~$ Using username "ubuntu".
+Authenticating with public key "imported-openssh-key"
+Welcome to Ubuntu 16.04.6 LTS (GNU/Linux 4.4.0-1092-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+33 packages can be updated.
+0 updates are security updates.
+
+New release '18.04.3 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+*** System restart required ***
+Last login: Thu Dec 19 05:59:32 2019 from 125.99.247.106
+]0;ubuntu@ip-172-31-39-68: ~ubuntu@ip-172-31-39-68:~$ 
+]0;ubuntu@ip-172-31-39-68: ~ubuntu@ip-172-31-39-68:~$ 
+]0;ubuntu@ip-172-31-39-68: ~ubuntu@ip-172-31-39-68:~$ cd /etc/passw[K[K[K[K[K
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ ls
+[0m[01;34macpi[0m                    inputrc                  profile
+adduser.conf            [01;34minsserv[0m                  [01;34mprofile.d[0m
+[01;34malternatives[0m            insserv.conf             protocols
+[01;34mapm[0m                     [01;34minsserv.conf.d[0m           [01;34mpython3[0m
+[01;34mapparmor[0m                [01;34miproute2[0m                 [01;34mpython3.5[0m
+[01;34mapparmor.d[0m              [01;34miscsi[0m                    [01;34mrc0.d[0m
+[01;34mapport[0m                  issue                    [01;34mrc1.d[0m
+[01;34mapt[0m                     issue.net                [01;34mrc2.d[0m
+at.deny                 [01;34mkbd[0m                      [01;34mrc3.d[0m
+bash.bashrc             [01;34mkernel[0m                   [01;34mrc4.d[0m
+bash_completion         kernel-img.conf          [01;34mrc5.d[0m
+[01;34mbash_completion.d[0m       [01;34mldap[0m                     [01;34mrc6.d[0m
+bindresvport.blacklist  ld.so.cache              [01;32mrc.local[0m
+[01;34mbinfmt.d[0m                ld.so.conf               [01;34mrcS.d[0m
+[01;34mbyobu[0m                   [01;34mld.so.conf.d[0m             [01;34mresolvconf[0m
+[01;34mca-certificates[0m         legal                    [01;36mresolv.conf[0m
+ca-certificates.conf    libaudit.conf            [01;32mrmt[0m
+[01;34mcalendar[0m                locale.alias             rpc
+[01;34mcloud[0m                   locale.gen               rsyslog.conf
+[01;34mconsole-setup[0m           [01;36mlocaltime[0m                [01;34mrsyslog.d[0m
+[01;34mcron.d[0m                  [01;34mlogcheck[0m                 screenrc
+[01;34mcron.daily[0m              login.defs               securetty
+[01;34mcron.hourly[0m             logrotate.conf           [01;34msecurity[0m
+[01;34mcron.monthly[0m            [01;34mlogrotate.d[0m              [01;34mselinux[0m
+crontab                 lsb-release              services
+[01;34mcron.weekly[0m             ltrace.conf              [01;34msgml[0m
+crypttab                [01;34mlvm[0m                      shadow
+[01;34mdbus-1[0m                  machine-id               shadow-
+debconf.conf            magic                    shells
+debian_version          magic.mime               [01;34mskel[0m
+[01;34mdefault[0m                 mailcap                  sos.conf
+deluser.conf            mailcap.order            [01;34mssh[0m
+[01;34mdepmod.d[0m                manpath.config           [01;34mssl[0m
+[01;34mdhcp[0m                    [01;34mmdadm[0m                    subgid
+[01;34mdnsmasq.d[0m               mime.types               subgid-
+[01;34mdocker[0m                  mke2fs.conf              subuid
+[01;34mdpkg[0m                    [01;34mmodprobe.d[0m               subuid-
+ec2_version             modules                  sudoers
+environment             [01;34mmodules-load.d[0m           [01;34msudoers.d[0m
+[01;34mfonts[0m                   [01;36mmtab[0m                     sysctl.conf
+fstab                   nanorc                   [01;34msysctl.d[0m
+fuse.conf               [01;34mnetwork[0m                  [01;34msystemd[0m
+gai.conf                [01;34mNetworkManager[0m           [01;34mterminfo[0m
+[01;34mgroff[0m                   networks                 timezone
+group                   [01;34mnewt[0m                     [01;34mtmpfiles.d[0m
+group-                  nsswitch.conf            ucf.conf
+[01;34mgrub.d[0m                  [01;34mopt[0m                      [01;34mudev[0m
+gshadow                 [01;36mos-release[0m               [01;34mufw[0m
+gshadow-                overlayroot.conf         updatedb.conf
+[01;34mgss[0m                     overlayroot.local.conf   [01;34mupdate-manager[0m
+hdparm.conf             pam.conf                 [01;34mupdate-motd.d[0m
+hibagent-config.cfg     [01;34mpam.d[0m                    [01;34mupdate-notifier[0m
+host.conf               passwd                   [01;34mvim[0m
+hostname                passwd-                  [01;34mvmware-tools[0m
+hosts                   [01;34mperl[0m                     [01;36mvtrgb[0m
+hosts.allow             [01;34mpm[0m                       wgetrc
+hosts.deny              [01;34mpolkit-1[0m                 [01;34mX11[0m
+[01;34minit[0m                    [01;34mpollinate[0m                [01;34mxdg[0m
+[01;34minit.d[0m                  popularity-contest.conf  [01;34mxml[0m
+[01;34minitramfs-tools[0m         [01;34mppp[0m                      zsh_command_not_found
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ cd groff/[K[K[K[K[K[K[K[K[Kcat group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,ubuntu
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:ubuntu
+fax:x:21:
+voice:x:22:
+cdrom:x:24:ubuntu
+floppy:x:25:ubuntu
+tape:x:26:
+sudo:x:27:ubuntu
+audio:x:29:ubuntu
+dip:x:30:ubuntu
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:ubuntu
+sasl:x:45:
+plugdev:x:46:ubuntu
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-timesync:x:102:
+systemd-network:x:103:
+systemd-resolve:x:104:
+systemd-bus-proxy:x:105:
+input:x:106:
+crontab:x:107:
+syslog:x:108:
+netdev:x:109:ubuntu
+lxd:x:110:ubuntu
+messagebus:x:111:
+uuidd:x:112:
+ssh:x:113:
+mlocate:x:114:
+admin:x:115:
+ubuntu:x:1000:
+docker:x:116:ubuntu
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ doch[Kk [Ker run -it hello-run
+Unable to find image 'hello-run:latest' locally
+docker: Error response from daemon: pull access denied for hello-run, repository does not exist or may require 'docker login'.
+See 'docker run --help'.
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ docker run -it hello-run[C[K[K[K[K-world
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+
+[1A[1K[K1b930d010525: Pulling fs layer [1B[1A[1K[K1b930d010525: Downloading     977B/977B[1B[1A[1K[K1b930d010525: Verifying Checksum [1B[1A[1K[K1b930d010525: Download complete [1B[1A[1K[K1b930d010525: Extracting     977B/977B[1B[1A[1K[K1b930d010525: Extracting     977B/977B[1B[1A[1K[K1b930d010525: Pull complete [1BDigest: sha256:4fe721ccc2e8dc7362278a29dc660d833570ec2682f4e4194f4ee23e415e1064
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+failed to resize tty, using default size
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ [K]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ 
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ 
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ 
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ 
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ 
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ 
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ docker run -it hello-world[1P hello-world[1P hello-world[1P hello-world[1Phello-world
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ 
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ 
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED              STATUS                          PORTS               NAMES
+c8e28f84a89c        hello-world         "/hello"            21 seconds ago       Exited (0) 20 seconds ago                           frosty_hugle
+dd9a20462c66        hello-world         "/hello"            About a minute ago   Exited (0) About a minute ago                       nervous_poitras
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ docker ps -a[Krun hello-world
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ docker run hello-world
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ docker run hello-world
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ docker run hello-world[10Pps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED              STATUS                          PORTS               NAMES
+379621cbe1ba        hello-world         "/hello"            3 seconds ago        Exited (0) 3 seconds ago                            objective_wright
+2dacb760923e        hello-world         "/hello"            6 seconds ago        Exited (0) 5 seconds ago                            elegant_wing
+1f12eb6752f3        hello-world         "/hello"            8 seconds ago        Exited (0) 8 seconds ago                            sleepy_shtern
+c8e28f84a89c        hello-world         "/hello"            About a minute ago   Exited (0) About a minute ago                       frosty_hugle
+dd9a20462c66        hello-world         "/hello"            2 minutes ago        Exited (0) 2 minutes ago                            nervous_poitras
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ docker ps -arun hello-world[10Pps -a[K
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ 
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ docker image ls
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+hello-world         latest              fce289e99eb9        11 months ago       1.84kB
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ docker image ls[K[K[K[Kes
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+hello-world         latest              fce289e99eb9        11 months ago       1.84kB
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ 
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ 
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ 
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ docker ru [Kn -i -t alpine /bin/sh
+Unable to find image 'alpine:latest' locally
+latest: Pulling from library/alpine
+
+[1A[1K[K89d9c30c1d48: Pulling fs layer [1B[1A[1K[K89d9c30c1d48: Downloading [>                                                  ]  33.28kB/2.787MB[1B[1A[1K[K89d9c30c1d48: Verifying Checksum [1B[1A[1K[K89d9c30c1d48: Download complete [1B[1A[1K[K89d9c30c1d48: Extracting [>                                                  ]  32.77kB/2.787MB[1B[1A[1K[K89d9c30c1d48: Extracting [=================>                                 ]  950.3kB/2.787MB[1B[1A[1K[K89d9c30c1d48: Extracting [==================================================>]  2.787MB/2.787MB[1B[1A[1K[K89d9c30c1d48: Pull complete [1BDigest: sha256:c19173c5ada610a5989151111163d28a67368362762534d8a8=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2019.12.19 12:09:23 =~=~=~=~=~=~=~=~=~=~=~=
+121ce95cf2bd5a
+Status: Downloaded newer image for alpine:latest
+/ # [6n/ # [Jps
+PID   USER     TIME  COMMAND
+    1 root      0:00 /bin/sh
+    6 root      0:00 ps
+/ # [6nwho am i
+/bin/sh: who: not found
+/ # [6n/ # who am i[Ji[Jami[Jami
+root
+/ # [6n/ # whoami[J/ # who am i[J/ # ps[J
+PID   USER     TIME  COMMAND
+    1 root      0:00 /bin/sh
+    8 root      0:00 ps
+/ # [6n]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED              STATUS              PORTS               NAMES
+32b7d24db92a        alpine              "/bin/sh"           About a minute ago   Up About a minute                       amazing_heisenberg
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ docker attach 32b7d24db92a
+/ # [J/ # [Jhgggggggffjhgdhvjfghfgfkjbhjghjdnbnb[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[Jexit
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ ps
+  PID TTY          TIME CMD
+22453 pts/1    00:00:00 bash
+24018 pts/1    00:00:00 ps
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ docker run -it 1st_[K[K[K[K--name p[KPGalpine alpine /bin/bas[K[K[Ksh
+/ # [6n/ # [Jpwd
+/
+/ # [6ncd temp
+/bin/sh: cd: can't cd to temp: No such file or directory
+/ # [6ncd ./te[Jmp
+/tmp # [6npwd
+/tmp
+/tmp # [6ntouch file1.txt
+/tmp # [6n/tmp # touch file1.txt[J.txt[J2.txt.txt
+/tmp # [6nexit
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ ps
+  PID TTY          TIME CMD
+22453 pts/1    00:00:00 bash
+24217 pts/1    00:00:00 ps
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                          PORTS               NAMES
+a3eb92c5ea58        alpine              "/bin/sh"           2 minutes ago       Exited (0) About a minute ago                       PGalpine
+32b7d24db92a        alpine              "/bin/sh"           11 minutes ago      Exited (0) 4 minutes ago                            amazing_heisenberg
+379621cbe1ba        hello-world         "/hello"            24 minutes ago      Exited (0) 24 minutes ago                           objective_wright
+2dacb760923e        hello-world         "/hello"            24 minutes ago      Exited (0) 24 minutes ago                           elegant_wing
+1f12eb6752f3        hello-world         "/hello"            24 minutes ago      Exited (0) 24 minutes ago                           sleepy_shtern
+c8e28f84a89c        hello-world         "/hello"            25 minutes ago      Exited (0) 25 minutes ago                           frosty_hugle
+dd9a20462c66        hello-world         "/hello"            26 minutes ago      Exited (0) 26 minutes ago                           nervous_poitras
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ docke [Kr sts[Kart --name PGalpine
+unknown flag: --name
+See 'docker start --help'.
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ docker start --name PGalpine[1P PGalpine[1P PGalpine[1P PGalpine[1P PGalpine[1P PGalpine[1P PGalpine[1PPGalpine
+PGalpine
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ 
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+a3eb92c5ea58        alpine              "/bin/sh"           5 minutes ago       Up 21 seconds                           PGalpine
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ docker[Kr attach PGalpine
+/ # [J/ # [Jpwd
+/
+/ # [6ncd tm/ # cd tmp/[J
+/tmp # [6npwd
+/tmp
+/tmp # [6nls
+[0;0mfile1.txt[m  [0;0mfile2.txt[m
+/tmp # [6nexit
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ docker diff  [KPGalpine 
+C /tmp
+A /tmp/file1.txt
+A /tmp/file2.txt
+C /root
+A /root/.ash_history
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ docker volume create kolkata
+kolkata
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ docker volume ls
+DRIVER              VOLUME NAME
+local               kolkata
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ 
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ dockerins[K[K[K[Kr inspect kolkata 
+[
+    {
+        "CreatedAt": "2019-12-19T07:15:18Z",
+        "Driver": "local",
+        "Labels": {},
+        "Mountpoint": "/var/lib/docker/volumes/kolkata/_data",
+        "Name": "kolkata",
+        "Options": {},
+        "Scope": "local"
+    }
+]
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ docker run -it --rm -v kolkata:/Bangalore /bin/sh
+docker: invalid reference format.
+See 'docker run --help'.
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ docker run -it --rm -v kolkata:/Bangalore /bin/sh[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kdocker[Kr run -i [Kt --rm -v kolkata:/Bangalore /bin/sh
+docker: invalid reference format.
+See 'docker run --help'.
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ docker run -it --rm -v kolkata:/Bangalore /bin/sh[C[C[1P /bin/sh[1P /bin/sh[1P /bin/sh[1P /bin/sh[1P /bin/sh[1P /bin/sh[1P /bin/sh[1P /bin/sh[1P /bin/shK /bin/sho /bin/shl /bin/sha /bin/shk /bin/sha /bin/sht /bin/sha /bin/sh[1P /bin/sh[1P /bin/sh[1P /bin/sh[1P /bin/sh[1P /bin/sh[1P /bin/sh[1P /bin/sh[1P /bin/shk /bin/sho /bin/shl /bin/shk /bin/sha /bin/sht /bin/sha /bin/sh[C /bin/sha /bin/shl /bin/shp /bin/shi /bin/shn /bin/she /bin/sh
+/ # [6n/ # [Jcd kol/ # cd kolkata/[J[J al[J[J[J
+/kolkata # [6ntouche[J text1.txt
+/kolkata # [6n/kolkata # touch text1.txt[J.txt[J2.txt.txt
+/kolkata # [6ncd kol[J[J[J[J[J[Jls
+[0;0mtext1.txt[m  [0;0mtext2.txt[m
+/kolkata # [6ncd ..
+/ # [6ncd kol/ # cd kolkata/[Jkol[J[J[J[J[J[J[J[J[J[J[J[J[J[Jcd kolk/ # cd kolkata/[J
+/kolkata # [6necho ""h"i""
+hi
+/kolkata # [6nexit
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ docker run -it --rm -v kolkata:/kolkata alpine /bin/sh[5PBangalor[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[26Pinspect kolkata 
+[
+    {
+        "CreatedAt": "2019-12-19T07:23:16Z",
+        "Driver": "local",
+        "Labels": {},
+        "Mountpoint": "/var/lib/docker/volumes/kolkata/_data",
+        "Name": "kolkata",
+        "Options": {},
+        "Scope": "local"
+    }
+]
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ pwd
+/etc
+]0;ubuntu@ip-172-31-39-68: /etcubuntu@ip-172-31-39-68:/etc$ cd..[K[K ..
+]0;ubuntu@ip-172-31-39-68: /ubuntu@ip-172-31-39-68:/$ pwd
+/
+]0;ubuntu@ip-172-31-39-68: /ubuntu@ip-172-31-39-68:/$ pwdcd ..[2Ppwddocker inspect kolkata run -it --rm -v kolkata:/kolkata alpine /bin/sh[1P[1P[1P[1P[1P[1P[1P[1@B[1@a[1@n[1@g[1@a[1@l[1@o[1@t[1@r[1@e[1P[1P[1P[1@r[1@e
+/ # [6n/ # [Jcd banh[J[J[J[JBang/ # cd Bangalore/[J
+/Bangalore # [6nls
+[0;0mtext1.txt[m  [0;0mtext2.txt[m
+/Bangalore # [6ntouch text1.txt
+/Bangalore # [6nls
+[0;0mtext1.txt[m  [0;0mtext2.txt[m
+/Bangalore # [6necho ""h"i" "t"x"t"1"" >text1.txt
+/Bangalore # [6n/Bangalore # echo "hi txt1" >text1.txt[J/Bangalore # ls[J/Bangalore # touch text1.txt[J text1.txt[J[10D text1.txt[J[10D text1.txt[J[10D text1.txt[J[10D text1.txt[J[10Dc text1.txt[10Da text1.txt[10Dt text1.txt[10D text1.txt
+hi txt1
+/Bangalore # [6nexit
+]0;ubuntu@ip-172-31-39-68: /ubuntu@ip-172-31-39-68:/$ cd[K[Kinspec[K[K[K[K[K[Kdocker inspect kolkata ka[K[K[K[K[K[K[K[K[K[KBanga[K[K[K[K[Kkolkata 
+[
+    {
+        "CreatedAt": "2019-12-19T07:23:16Z",
+        "Driver": "local",
+        "Labels": {},
+        "Mountpoint": "/var/lib/docker/volumes/kolkata/_data",
+        "Name": "kolkata",
+        "Options": {},
+        "Scope": "local"
+    }
+]
+]0;ubuntu@ip-172-31-39-68: /ubuntu@ip-172-31-39-68:/$ cd /var/lib/docker/volumes/kolkata/_data
+-bash: cd: /var/lib/docker/volumes/kolkata/_data: Permission denied
+]0;ubuntu@ip-172-31-39-68: /ubuntu@ip-172-31-39-68:/$ cd /var/lib/docker/volumes/kolkata/_data[1@s[1@u[1@d[1@o[1@ 
+sudo: cd: command not found
+]0;ubuntu@ip-172-31-39-68: /ubuntu@ip-172-31-39-68:/$ sud[K[K[Kcd var/
+]0;ubuntu@ip-172-31-39-68: /varubuntu@ip-172-31-39-68:/var$ cd lib/
+]0;ubuntu@ip-172-31-39-68: /var/libubuntu@ip-172-31-39-68:/var/lib$ cd docker/
+]0;ubuntu@ip-172-31-39-68: /var/lib/dockerubuntu@ip-172-31-39-68:/var/lib/docker$ cd volumes[K[K[K[K[K[K[K[K[K[Kls
+ls: cannot open directory '.': Permission denied
+]0;ubuntu@ip-172-31-39-68: /var/lib/dockerubuntu@ip-172-31-39-68:/var/lib/docker$ sudo ls
+builder  buildkit  containers  image  network  overlay2  plugins  runtimes  swarm  tmp	trust  volumes
+]0;ubuntu@ip-172-31-39-68: /var/lib/dockerubuntu@ip-172-31-39-68:/var/lib/docker$ sudo cd vol[K[K[K[K[K[K[K[K[K[K[Kcd vol[K[K[K[K[K[Ksudo cd /vol[Klumes
+sudo: cd: command not found
+]0;ubuntu@ip-172-31-39-68: /var/lib/dockerubuntu@ip-172-31-39-68:/var/lib/docker$ sudo cd /volumes[C[1Pvolumes[C[C[C[C[C[C[C/
+sudo: cd: command not found
+]0;ubuntu@ip-172-31-39-68: /var/lib/dockerubuntu@ip-172-31-39-68:/var/lib/docker$ 
+]0;ubuntu@ip-172-31-39-68: /var/lib/dockerubuntu@ip-172-31-39-68:/var/lib/docker$ 
+]0;ubuntu@ip-172-31-39-68: /var/lib/dockerubuntu@ip-172-31-39-68:/var/lib/docker$ cd ..
+]0;ubuntu@ip-172-31-39-68: /var/libubuntu@ip-172-31-39-68:/var/lib$ ls
+[0m[01;34mAccountsService[0m  [01;34mcloud[0m       [01;34mdocker[0m           [01;34minitscripts[0m  [01;34mlxd[0m     [01;34mmlocate[0m    [01;34mpolkit-1[0m    [01;34msnapd[0m       [01;34mubuntu-release-upgrader[0m  [01;34mupdate-rc.d[0m  [01;34mvim[0m
+[01;34mamazon[0m           [01;34mcontainerd[0m  [01;34mdpkg[0m             [01;34minsserv[0m      [01;34mman-db[0m  [01;34mos-prober[0m  [01;34mpython[0m      [01;34msudo[0m        [01;34mucf[0m                      [01;34murandom[0m      [01;34mxml-core[0m
+[01;34mapparmor[0m         [01;34mdbus[0m        [01;34mgit[0m              [01;34mlogrotate[0m    [01;34mmdadm[0m   [01;34mpam[0m        [01;34mresolvconf[0m  [01;34msystemd[0m     [01;34mupdate-manager[0m           [01;34mureadahead[0m
+[01;34mapt[0m              [01;34mdhcp[0m        [01;34minitramfs-tools[0m  [01;34mlxcfs[0m        [01;34mmisc[0m    [01;34mplymouth[0m   [01;34msgml-base[0m   [01;34mubuntu-fan[0m  [01;34mupdate-notifier[0m          [01;34musbutils[0m
+]0;ubuntu@ip-172-31-39-68: /var/libubuntu@ip-172-31-39-68:/var/lib$ ll
+total 172
+drwxr-xr-x 44 root root    4096 Dec 19 06:09 [0m[01;34m.[0m/
+drwxr-xr-x 13 root root    4096 Sep 13 11:38 [01;34m..[0m/
+drwxr-xr-x  4 root root    4096 Sep 13 11:37 [01;34mAccountsService[0m/
+drw-------  3 root root    4096 Dec 19 05:34 [01;34mamazon[0m/
+drwxr-xr-x  3 root root    4096 Sep 13 11:37 [01;34mapparmor[0m/
+drwxr-xr-x  6 root root    4096 Dec 19 06:09 [01;34mapt[0m/
+drwxr-xr-x  8 root root    4096 Dec 19 05:33 [01;34mcloud[0m/
+drwx------ 11 root root    4096 Dec 19 06:09 [01;34mcontainerd[0m/
+drwxr-xr-x  2 root root    4096 Dec 19 05:33 [01;34mdbus[0m/
+drwxr-xr-x  2 root root    4096 Dec 19 05:33 [01;34mdhcp[0m/
+drwx--x--x 14 root root    4096 Dec 19 06:09 [01;34mdocker[0m/
+drwxr-xr-x  7 root root    4096 Dec 19 06:09 [01;34mdpkg[0m/
+drwxr-xr-x  2 root root    4096 Nov 27  2018 [01;34mgit[0m/
+drwxr-xr-x  2 root root    4096 Dec 19 06:09 [01;34minitramfs-tools[0m/
+drwxr-xr-x  2 root root    4096 Feb  5  2016 [01;34minitscripts[0m/
+drwxr-xr-x  2 root root    4096 Feb  5  2016 [01;34minsserv[0m/
+drwxr-xr-x  2 root root    4096 Dec 19 06:25 [01;34mlogrotate[0m/
+drwxr-xr-x  2 root root       0 Dec 19 07:34 [01;34mlxcfs[0m/
+drwxr-xr-x  2 lxd  nogroup 4096 Dec 19 05:34 [01;34mlxd[0m/
+drwxr-xr-x  2 root root    4096 Sep 13 11:38 [01;34mman-db[0m/
+drwxr-xr-x  2 root root    4096 Sep 13 11:38 [01;34mmdadm[0m/
+drwxr-xr-x  2 root root    4096 Apr 12  2016 [01;34mmisc[0m/
+drwxr-xr-x  2 root root    4096 Dec 19 06:25 [01;34mmlocate[0m/
+drwxr-xr-x  2 root root    4096 Feb  3  2017 [01;34mos-prober[0m/
+drwxr-xr-x  2 root root    4096 Sep 13 11:38 [01;34mpam[0m/
+drwxr-xr-x  2 root root    4096 May  9  2018 [01;34mplymouth[0m/
+drwx------  3 root root    4096 Sep 13 11:38 [01;34mpolkit-1[0m/
+drwxr-xr-x  2 root root    4096 Sep 13 11:36 [01;34mpython[0m/
+drwxr-xr-x  2 root root    4096 Sep 13 11:36 [01;34mresolvconf[0m/
+drwxr-xr-x  2 root root    4096 Sep 13 11:38 [01;34msgml-base[0m/
+drwxr-xr-x 18 root root    4096 Dec 19 07:34 [01;34msnapd[0m/
+drwxr-xr-x  3 root root    4096 Sep 13 11:36 [01;34msudo[0m/
+drwxr-xr-x  6 root root    4096 Dec 19 05:34 [01;34msystemd[0m/
+drwxr-xr-x  3 root root    4096 Dec 19 06:09 [01;34mubuntu-fan[0m/
+drwxr-xr-x  2 root root    4096 Dec 19 05:59 [01;34mubuntu-release-upgrader[0m/
+drwxr-xr-x  3 root root    4096 Dec 19 06:09 [01;34mucf[0m/
+drwxr-xr-x  2 root root    4096 Dec 19 05:59 [01;34mupdate-manager[0m/
+drwxr-xr-x  4 root root    4096 Dec 19 06:09 [01;34mupdate-notifier[0m/
+drwxr-xr-x  2 root root    4096 Mar  6  2015 [01;34mupdate-rc.d[0m/
+drwxr-xr-x  2 root root    4096 Feb  5  2016 [01;34murandom[0m/
+drwxr-xr-x  3 root root    4096 Sep 13 11:36 [01;34mureadahead[0m/
+drwxr-xr-x  2 root root    4096 Sep 13 11:37 [01;34musbutils[0m/
+drwxr-xr-x  3 root root    4096 Sep 13 11:36 [01;34mvim[0m/
+drwxr-xr-x  2 root root    4096 Sep 13 11:38 [01;34mxml-core[0m/
+]0;ubuntu@ip-172-31-39-68: /var/libubuntu@ip-172-31-39-68:/var/lib$ sudo cd /dov[Kck[K[K[K[K[Kdocker/volume[K[K[K[K[K[Kvolumes
+sudo: cd: command not found
+]0;ubuntu@ip-172-31-39-68: /var/libubuntu@ip-172-31-39-68:/var/lib$ sudo cd docker/volumes/
+sudo: cd: command not found
+]0;ubuntu@ip-172-31-39-68: /var/libubuntu@ip-172-31-39-68:/var/lib$ sudo cd docker/volumes/[K[K[K[K[K[K[K[K
+sudo: cd: command not found
+]0;ubuntu@ip-172-31-39-68: /var/libubuntu@ip-172-31-39-68:/var/lib$ sudo cd /var/lib/docker/volumes/kolkata/
+sudo: cd: command not found
+]0;ubuntu@ip-172-31-39-68: /var/libubuntu@ip-172-31-39-68:/var/lib$ sudo cd /var/lib/docker/volumes/kolkata/[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd ../..
+]0;ubuntu@ip-172-31-39-68: /ubuntu@ip-172-31-39-68:/$ pwd
+/
+]0;ubuntu@ip-172-31-39-68: /ubuntu@ip-172-31-39-68:/$ pwdcd ../..sudo cd /var/lib/docker/volumes/kolkata/docker/[Kvolumes/[Kll[Ksudo cd docker/volumes/[K/var/lib/docker/volumes/kolkata/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ../..[Ksudo cd /var/lib/docker/volumes/kolkata/docker/[Kvolumes/[Kll[Kscd ..sudo cd volumes//volumesls[Kls[Kcd docker/[3Plib/var/sudo cd /var/lib/docker/volumes/kolkata/_data[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[17Pdocker inspect kolkata run -it --rm -v kolkata:/Bangalore alpine /bin/sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpwd[Kcd ..[2Ppwddocker inspect kolkata run -it --rm -v kolkata:/kolkata alpine /bin/sh[5PBangalor[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[26Pinspect kolkata [7Pvolume lscreate kolkata[7Pdiff PGalpine volume create kolkatals[Kinspect kolkata [7Pvolume ls
+DRIVER              VOLUME NAME
+local               kolkata
+]0;ubuntu@ip-172-31-39-68: /ubuntu@ip-172-31-39-68:/$ 
+]0;ubuntu@ip-172-31-39-68: /ubuntu@ip-172-31-39-68:/$ 
+]0;ubuntu@ip-172-31-39-68: /ubuntu@ip-172-31-39-68:/$ 
+]0;ubuntu@ip-172-31-39-68: /ubuntu@ip-172-31-39-68:/$ docker volume ls[Kdocker volume lspwd[Kcd ../..sudo cd /var/lib/docker/volumes/kolkata/docker/[Kvolumes/[Kll[Kscd ..sudo cd volumes//volumesvolumes/cd ..[Ksudo cd volumes//volumesls[Kls[Kcd docker/[3Plib/var/sudo cd /var/lib/docker/volumes/kolkata/_data[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5@sudo [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[17Pdocker inspect kolkata run -it --rm -v kolkata:/Bangalore alpine /bin/sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpwd[Kdocker run -it --rm -v kolkata:/Bangalore alpine /bin/sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpwd[Kcd ..[2Ppwddocker inspect kolkata run -it --rm -v kolkata:/kolkata alpine /bin/sh[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kins[K[K[Kdocker ins[[Kpect kolkata la[K[K[K
+[
+    {
+        "CreatedAt": "2019-12-19T07:23:16Z",
+        "Driver": "local",
+        "Labels": {},
+        "Mountpoint": "/var/lib/docker/volumes/kolkata/_data",
+        "Name": "kolkata",
+        "Options": {},
+        "Scope": "local"
+    }
+]
+]0;ubuntu@ip-172-31-39-68: /ubuntu@ip-172-31-39-68:/$ 
+]0;ubuntu@ip-172-31-39-68: /ubuntu@ip-172-31-39-68:/$ 
+]0;ubuntu@ip-172-31-39-68: /ubuntu@ip-172-31-39-68:/$ 
+]0;ubuntu@ip-172-31-39-68: /ubuntu@ip-172-31-39-68:/$ docker inspect kolkata[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd ..[K[K[K[K[Ksudo - [K
+sudo: -: command not found
+]0;ubuntu@ip-172-31-39-68: /ubuntu@ip-172-31-39-68:/$ sudo -[K[K[K[K[K[Ksudo su -
+]0;root@ip-172-31-39-68: ~root@ip-172-31-39-68:~# cd /var/lib/docker/volumes/kolkata/
+]0;root@ip-172-31-39-68: /var/lib/docker/volumes/kolkataroot@ip-172-31-39-68:/var/lib/docker/volumes/kolkata# ls
+[0m[01;34m_data[0m
+]0;root@ip-172-31-39-68: /var/lib/docker/volumes/kolkataroot@ip-172-31-39-68:/var/lib/docker/volumes/kolkata# cat [K[K[K[Klscd /var/lib/docker/volumes/kolkata/_data
+]0;root@ip-172-31-39-68: /var/lib/docker/volumes/kolkata/_dataroot@ip-172-31-39-68:/var/lib/docker/volumes/kolkata/_data# ls
+text1.txt  text2.txt
+]0;root@ip-172-31-39-68: /var/lib/docker/volumes/kolkata/_dataroot@ip-172-31-39-68:/var/lib/docker/volumes/kolkata/_data# lscd /var/lib/docker/volumes/kolkata/_data[1P/_data[1P/_data[1P/_data[1P/_data[1P/_data[1P/_data[1P/_data[1P_data[C[C[C[C[C[C[K[K[K[K[K
+]0;root@ip-172-31-39-68: /var/lib/docker/volumesroot@ip-172-31-39-68:/var/lib/docker/volumes# ls
+[0m[01;34mkolkata[0m  metadata.db
+]0;root@ip-172-31-39-68: /var/lib/docker/volumesroot@ip-172-31-39-68:/var/lib/docker/volumes# cd kolkata/[K[K[K[K[K[K[K[K[K[K[KBV[K[KB[Kdocker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+]0;root@ip-172-31-39-68: /var/lib/docker/volumesroot@ip-172-31-39-68:/var/lib/docker/volumes# docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                         PORTS               NAMES
+a3eb92c5ea58        alpine              "/bin/sh"           About an hour ago   Exited (0) About an hour ago                       PGalpine
+32b7d24db92a        alpine              "/bin/sh"           About an hour ago   Exited (0) About an hour ago                       amazing_heisenberg
+379621cbe1ba        hello-world         "/hello"            About an hour ago   Exited (0) About an hour ago                       objective_wright
+2dacb760923e        hello-world         "/hello"            About an hour ago   Exited (0) About an hour ago                       elegant_wing
+1f12eb6752f3        hello-world         "/hello"            About an hour ago   Exited (0) About an hour ago                       sleepy_shtern
+c8e28f84a89c        hello-world         "/hello"            About an hour ago   Exited (0) About an hour ago                       frosty_hugle
+dd9a20462c66        hello-world         "/hello"            About an hour ago   Exited (0) About an hour ago                       nervous_poitras
+]0;root@ip-172-31-39-68: /var/lib/docker/volumesroot@ip-172-31-39-68:/var/lib/docker/volumes# docker ps -a[Kls[Kcd /var/lib/docker/volumes/ls[Kcd /var/lib/docker/volumes/kolkata/_datals[Kcd /var/lib/docker/volumes/kolkata/ls[Kcd /var/lib/docker/volumes/kolkata/_datals[Kcd /var/lib/docker/volumes/ls[Kdocker ps -a[Kdocker ps -a[Kls[Kcd /var/lib/docker/volumes/ls[Kcd /var/lib/docker/volumes/kolkata/_datals[Kcd /var/lib/docker/volumes/kolkata/cd ..
+-su: cd: /var/lib/docker/volumes/kolkata/cd: No such file or directory
+]0;root@ip-172-31-39-68: /var/lib/docker/volumesroot@ip-172-31-39-68:/var/lib/docker/volumes# cd ..
+]0;root@ip-172-31-39-68: /var/lib/dockerroot@ip-172-31-39-68:/var/lib/docker# cd ..
+]0;root@ip-172-31-39-68: /var/libroot@ip-172-31-39-68:/var/lib# cd ..
+]0;root@ip-172-31-39-68: /varroot@ip-172-31-39-68:/var# cd ..
+]0;root@ip-172-31-39-68: /root@ip-172-31-39-68:/# sudo - ubuntu
+sudo: -: command not found
+]0;root@ip-172-31-39-68: /root@ip-172-31-39-68:/# su -ubuntu
+su: invalid option -- 'u'
+Usage: su [options] [LOGIN]
+
+Options:
+  -c, --command COMMAND         pass COMMAND to the invoked shell
+  -h, --help                    display this help message and exit
+  -, -l, --login                make the shell a login shell
+  -m, -p,
+  --preserve-environment        do not reset environment variables, and
+                                keep the same shell
+  -s, --shell SHELL             use SHELL instead of the default in passwd
+
+]0;root@ip-172-31-39-68: /root@ip-172-31-39-68:/# su -ubuntu ubuntu
+]0;ubuntu@ip-172-31-39-68: ~ubuntu@ip-172-31-39-68:~$ 
+]0;ubuntu@ip-172-31-39-68: ~ubuntu@ip-172-31-39-68:~$ 
+]0;ubuntu@ip-172-31-39-68: ~ubuntu@ip-172-31-39-68:~$ 
+]0;ubuntu@ip-172-31-39-68: ~ubuntu@ip-172-31-39-68:~$ pwd
+/home/ubuntu
+]0;ubuntu@ip-172-31-39-68: ~ubuntu@ip-172-31-39-68:~$ mkdir ouralpine_alpine
+]0;ubuntu@ip-172-31-39-68: ~ubuntu@ip-172-31-39-68:~$ cd out[Kr_alpine/
+]0;ubuntu@ip-172-31-39-68: ~/our_alpineubuntu@ip-172-31-39-68:~/our_alpine$ pwd
+/home/ubuntu/our_alpine
+]0;ubuntu@ip-172-31-39-68: ~/our_alpineubuntu@ip-172-31-39-68:~/our_alpine$ vim Dockerfile
+[?1049h[?1h=[2;1H▽[6n[2;1H  [1;1H]11;?[1;44r[?12;25h[?12l[?25h[27m[23m[m[H[2J[?25l[44;1H"Dockerfile" [New File][>c[2;1H[1m[34m~                                                                                                                                                                       [3;1H~                                                                                                                                                                       [4;1H~                                                                                                                                                                       [5;1H~                                                                                                                                                                       [6;1H~                                                                                                                                                                       [7;1H~                                                                                                                                                                       [8;1H~                                                                                                                                                                       [9;1H~                                                                                                                                                                       [10;1H~                                                                                                                                                                       [11;1H~                                                                                                                                                                       [12;1H~                                                                                                                                                                       [13;1H~                                                                                                                                                                       [14;1H~                                                                                                                                                                       [15;1H~                                                                                                                                                                       [16;1H~                                                                                                                                                                       [17;1H~                                                                                                                                                                       [18;1H~                                                                                                                                                                       [19;1H~                                                                                                                                                                       [20;1H~                                                                                                                                                                       [21;1H~                                                                                                                                                                       [22;1H~                                                                                                                                                                       [23;1H~                                                                                                                                                                       [24;1H~                                                                                                                                                                       [25;1H~                                                                                                                                                                       [26;1H~                                                                                                                                                                       [27;1H~                                                                                                                                                                       [28;1H~                                                                                                                                                                       [29;1H~                                                                                                                                                                       [30;1H~                                                                                                                                                                       [31;1H~                                                                                                                                                                       [32;1H~                                                                                                                                                                       [33;1H~                                                                                                                                                                       [34;1H~                                                                                                                                                                       [35;1H~                                                                                                                                                                       [36;1H~                                                                                                                                                                       [37;1H~                                                                                                                                                                       [38;1H~                                                                                                                                                                       [39;1H~                                                                                                                                                                       [40;1H~                                                                                                                                                                       [41;1H~                                                                                                                                                                       [42;1H~                                                                                                                                                                       [43;1H~                                                                                                                                                                       [m[44;151H0,0-1[9CAll[1;1H[?12l[?25h[?25l[44;1H[1m-- INSERT --[m[44;14H[K[44;151H0,1[11CAll[1;1H[?12l[?25h[?25lf[44;151H1,2[1;2H[?12l[?25h[?25lr[44;153H3[1;3H[?12l[?25h[?25lo[44;153H4[1;4H[?12l[?25h[?25lm[44;153H5[1;5H[?12l[?25h[?25l[44;153H4[1;4H[?12l[?25h[?25l[44;153H3[1;3H[?12l[?25h[?25l[44;153H2[1;2H[?12l[?25h[?25lrom[1;4H[K[44;153H1[1;1H[?12l[?25h[?25lFrom[44;153H2[1;2H[?12l[?25h[?25l[44;153H3[1;3H[?12l[?25h[?25l[44;153H4[1;4H[?12l[?25h[?25l[44;153H5[1;5H[?12l[?25h[?25l[33mFrom [m[44;153H6[1;6H[?12l[?25h[?25la[44;153H7[1;7H[?12l[?25h[?25ll[44;153H8[1;8H[?12l[?25h[?25lp[44;153H9[1;9H[?12l[?25h[?25li[44;153H10[1;10H[?12l[?25h[?25ln[44;154H1[1;11H[?12l[?25h[?25le[44;154H2[1;12H[?12l[?25h[?25l[2;1H[K[44;151H2,1 [2;1H[?12l[?25h[?25lC[44;153H2[2;2H[?12l[?25h[?25lM[44;153H3[2;3H[?12l[?25h[?25lD[44;153H4[2;4H[?12l[?25h[?25l[33mCMD [m[44;153H5[2;5H[?12l[?25h[?25l[[44;153H6[2;6H[?12l[?25h[?25l][46m[][m[44;153H7[2;7H[?12l[?25h[?25l[44;153H6[2;6H[?12l[?25h[?25l[46me[m]e[46m][m[44;153H7[2;7H[?12l[?25h[?25l[46mc[m]c[46m][m[44;153H8[2;8H[?12l[?25h[?25l[46mh[m]h[46m][m[44;153H9[2;9H[?12l[?25h[?25l[46mo[m]o[46m][m[44;153H10[2;10H[?12l[?25h[?25l[31m[46m"[m[31m]"[m[31m[46m][m[44;154H1[2;11H[?12l[?25h[?25l[2;5H[[5C[31m][m[44;154H0[2;10H[?12l[?25h[?25l[44;153H9 [2;9H[?12l[?25h[?25l[44;153H8[2;8H[?12l[?25h[?25l[44;153H7[2;7H[?12l[?25h[?25l[44;153H6[2;6H[?12l[?25h[?25l[31m"echo"[m][44;153H7[2;7H[?12l[?25h[?25l[44;153H8[2;8H[?12l[?25h[?25l[44;153H9[2;9H[?12l[?25h[?25l[44;153H10[2;10H[?12l[?25h[?25l[44;154H1[2;11H[?12l[?25h[?25l[2;5H[46m[[6C][m[44;154H2[2;12H[?12l[?25h[?25l[46m,[m],[46m][m[44;154H3[2;13H[?12l[?25h[?25l[46m [m] [46m][m[44;154H4[2;14H[?12l[?25h[?25l[31m[46m"[m[31m]"[m[31m[46m][m[44;154H5[2;15H[?12l[?25h[?25l[31m[46m"[m][31m"[m[46m][m[44;154H6[2;16H[?12l[?25h[?25l[2;5H[[10C][44;154H5[2;15H[?12l[?25h[?25l[31mm"[m][44;154H6[2;16H[?12l[?25h[?25l[31my"[m][44;154H7[2;17H[?12l[?25h[?25l[31m "[m][44;154H8[2;18H[?12l[?25h[?25l[31ma"[m][44;154H9[2;19H[?12l[?25h[?25l[31ml"[m][44;153H20[2;20H[?12l[?25h[?25l[31mp"[m][44;154H1[2;21H[?12l[?25h[?25l[31mi"[m][44;154H2[2;22H[?12l[?25h[?25l[31mn"[m][44;154H3[2;23H[?12l[?25h[?25l[31me"[m][44;154H4[2;24H[?12l[?25h[?25l[31m "[m][44;154H5[2;25H[?12l[?25h[?25l[31mi"[m][44;154H6[2;26H[?12l[?25h[?25l[31mm"[m][44;154H7[2;27H[?12l[?25h[?25l[31ma"[m][44;154H8[2;28H[?12l[?25h[?25l[31mh"[m][44;154H9[2;29H[?12l[?25h[?25l[31m"[m][2;30H[K[44;154H8[2;28H[?12l[?25h[?25l[31mg"[m][44;154H9[2;29H[?12l[?25h[?25l[31me"[m][44;153H30[2;30H[?12l[?25h[44;1H[K[2;29H[?25l[44;151H2,29[10CAll[2;29H[?12l[?25h[?25l[44;151H[K[44;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h![?25l[?12l[?25h[?25l"Dockerfile" [New] 2L, 44C written
+[?1l>[?12l[?25h[?1049l]0;ubuntu@ip-172-31-39-68: ~/our_alpineubuntu@ip-172-31-39-68:~/our_alpine$ more dockerfile
+more: stat of dockerfile failed: No such file or directory
+]0;ubuntu@ip-172-31-39-68: ~/our_alpineubuntu@ip-172-31-39-68:~/our_alpine$ more dockerfile[1Pvim Dockerfile[1P Dockerfile[1P Dockerfile[1P Dockerfilem Dockerfileo Dockerfiler Dockerfilee Dockerfile[C Dockerfile
+From alpine
+CMD ["echo", "my alpine image"]
+]0;ubuntu@ip-172-31-39-68: ~/our_alpineubuntu@ip-172-31-39-68:~/our_alpine$ docker bi[Kul[Kild . -t PGa[K[K[Kprithaalpine
+Sending build context to Docker daemon  2.048kB
+Step 1/2 : From alpine
+ ---> 965ea09ff2eb
+Step 2/2 : CMD ["echo", "my alpine image"]
+ ---> Running in 9dd76133e995
+Removing intermediate container 9dd76133e995
+ ---> 947c3bd697af
+Successfully built 947c3bd697af
+Successfully tagged prithaalpine:latest
+]0;ubuntu@ip-172-31-39-68: ~/our_alpineubuntu@ip-172-31-39-68:~/our_alpine$ 
+]0;ubuntu@ip-172-31-39-68: ~/our_alpineubuntu@ip-172-31-39-68:~/our_alpine$ 
+]0;ubuntu@ip-172-31-39-68: ~/our_alpineubuntu@ip-172-31-39-68:~/our_alpine$ 
+]0;ubuntu@ip-172-31-39-68: ~/our_alpineubuntu@ip-172-31-39-68:~/our_alpine$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED              SIZE
+prithaalpine        latest              947c3bd697af        About a minute ago   5.55MB
+alpine              latest              965ea09ff2eb        8 weeks ago          5.55MB
+hello-world         latest              fce289e99eb9        11 months ago        1.84kB
+]0;ubuntu@ip-172-31-39-68: ~/our_alpineubuntu@ip-172-31-39-68:~/our_alpine$ docker run 947c3bd697af
+my alpine image
+]0;ubuntu@ip-172-31-39-68: ~/our_alpineubuntu@ip-172-31-39-68:~/our_alpine$ 
+]0;ubuntu@ip-172-31-39-68: ~/our_alpineubuntu@ip-172-31-39-68:~/our_alpine$ docker ri[Ku [Kn -p 8086:8080 [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kdocker login 
+Login with your Docker ID to push and pull images from Docker Hub. If you don't have a Docker ID, head over to https://hub.docker.com to create one.
+Username: prithagoswami
+Password: 
+WARNING! Your password will be stored unencrypted in /home/ubuntu/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+]0;ubuntu@ip-172-31-39-68: ~/our_alpineubuntu@ip-172-31-39-68:~/our_alpine$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+prithaalpine        latest              947c3bd697af        6 minutes ago       5.55MB
+alpine              latest              965ea09ff2eb        8 weeks ago         5.55MB
+hello-world         latest              fce289e99eb9        11 months ago       1.84kB
+]0;ubuntu@ip-172-31-39-68: ~/our_alpineubuntu@ip-172-31-39-68:~/our_alpine$ 
+]0;ubuntu@ip-172-31-39-68: ~/our_alpineubuntu@ip-172-31-39-68:~/our_alpine$ 
+]0;ubuntu@ip-172-31-39-68: ~/our_alpineubuntu@ip-172-31-39-68:~/our_alpine$ docker tag prithaalpine:latest prithagoswami/
+Error parsing reference: "prithagoswami/" is not a valid repository/tag: invalid reference format
+]0;ubuntu@ip-172-31-39-68: ~/our_alpineubuntu@ip-172-31-39-68:~/our_alpine$ docker tag prithaalpine:latest prithagoswami/hello
+]0;ubuntu@ip-172-31-39-68: ~/our_alpineubuntu@ip-172-31-39-68:~/our_alpine$ 
+]0;ubuntu@ip-172-31-39-68: ~/our_alpineubuntu@ip-172-31-39-68:~/our_alpine$ 
+]0;ubuntu@ip-172-31-39-68: ~/our_alpineubuntu@ip-172-31-39-68:~/our_alpine$ docker tag prithaalpine:latest prithagoswami/hello[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K run -p 8086:8080tag prithaalpine:latest prithagoswami/images[K
+REPOSITORY            TAG                 IMAGE ID            CREATED             SIZE
+prithaalpine          latest              947c3bd697af        10 minutes ago      5.55MB
+prithagoswami/hello   latest              947c3bd697af        10 minutes ago      5.55MB
+alpine                latest              965ea09ff2eb        8 weeks ago         5.55MB
+hello-world           latest              fce289e99eb9        11 months ago       1.84kB
+]0;ubuntu@ip-172-31-39-68: ~/our_alpineubuntu@ip-172-31-39-68:~/our_alpine$ 
+]0;ubuntu@ip-172-31-39-68: ~/our_alpineubuntu@ip-172-31-39-68:~/our_alpine$ 
+]0;ubuntu@ip-172-31-39-68: ~/our_alpineubuntu@ip-172-31-39-68:~/our_alpine$ docker push prithagoswami/hello
+The push refers to repository [docker.io/prithagoswami/hello]
+
+[1A[1K[K77cae8ab23bf: Preparing [1B[1A[1K[K77cae8ab23bf: Mounted from library/alpine [1Blatest: digest: sha256:54a2747f4cc8d97ed08bdeb32fb7eb93905bbd78fa2bf012392ed5043ee4bb35 size: 528
+]0;ubuntu@ip-172-31-39-68: ~/our_alpineubuntu@ip-172-31-39-68:~/our_alpine$ docker ru -p [K[K[K[Kn -p 8086:"[K[K[K[K85:80 -d nginx
+Unable to find image 'nginx:latest' locally
+latest: Pulling from library/nginx
+
+[1A[1K[K000eee12ec04: Pulling fs layer [1B
+[1A[1K[Keb22865337de: Pulling fs layer [1B
+[1A[1K[Kbee5d581ef8b: Pulling fs layer [1B[2A[1K[Keb22865337de: Downloading [>                                                  ]  242.2kB/23.74MB[2B[1A[1K[Kbee5d581ef8b: Downloading [==================================================>]     203B/203B[1B[1A[1K[Kbee5d581ef8b: Verifying Checksum [1B[1A[1K[Kbee5d581ef8b: Download complete [1B[2A[1K[Keb22865337de: Downloading [=============>                                     ]  6.579MB/23.74MB[2B[3A[1K[K000eee12ec04: Downloading [>                                                  ]    277kB/27.09MB[3B[2A[1K[Keb22865337de: Downloading [===========================>                       ]  12.92MB/23.74MB[2B[3A[1K[K000eee12ec04: Downloading [=>                                                 ]    834kB/27.09MB[3B[2A[1K[Keb22865337de: Downloading [=======================================>           ]   18.8MB/23.74MB[2B[3A[1K[K000eee12ec04: Downloading [====>                                              ]  2.227MB/27.09MB[3B[2A[1K[Keb22865337de: Downloading [=================================================> ]  23.72MB/23.74MB[2B[2A[1K[Keb22865337de: Verifying Checksum [2B[2A[1K[Keb22865337de: Download complete [2B[3A[1K[K000eee12ec04: Downloading [===========>                                       ]  6.405MB/27.09MB[3B[3A[1K[K000eee12ec04: Downloading [========================>                          ]  13.37MB/27.09MB[3B[3A[1K[K000eee12ec04: Downloading [====================================>              ]  19.78MB/27.09MB[3B[3A[1K[K000eee12ec04: Downloading [================================================>  ]  26.46MB/27.09MB[3B[3A[1K[K000eee12ec04: Verifying Checksum [3B[3A[1K[K000eee12ec04: Download complete [3B[3A[1K[K000eee12ec04: Extracting [>                                                  ]  294.9kB/27.09MB[3B[3A[1K[K000eee12ec04: Extracting [====>                                              ]  2.654MB/27.09MB[3B[3A[1K[K000eee12ec04: Extracting [===========>                                       ]  6.193MB/27.09MB[3B[3A[1K[K000eee12ec04: Extracting [===============>                                   ]  8.552MB/27.09MB[3B[3A[1K[K000eee12ec04: Extracting [====================>                              ]  10.91MB/27.09MB[3B[3A[1K[K000eee12ec04: Extracting [=========================>                         ]  13.57MB/27.09MB[3B[3A[1K[K000eee12ec04: Extracting [=============================>                     ]  15.93MB/27.09MB[3B[3A[1K[K000eee12ec04: Extracting [================================>                  ]  17.69MB/27.09MB[3B[3A[1K[K000eee12ec04: Extracting [======================================>            ]  20.64MB/27.09MB

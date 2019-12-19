@@ -1,0 +1,385 @@
+IIHT@CR910 MINGW64 ~
+$
+
+
+
+IIHT@CR910 MINGW64 ~
+$
+
+IIHT@CR910 MINGW64 ~
+$
+
+IIHT@CR910 MINGW64 ~
+$ pwd
+/c/Users/IIHT
+
+IIHT@CR910 MINGW64 ~
+$ cd training/firstrepo/
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ ls
+first.txt  second.txt
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        first.txt
+        second.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$
+
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ git add .
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   first.txt
+        new file:   second.txt
+
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ git config --global user.name "pritha"
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ git config --global user.email pritha.goswami@gmail.com
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ git config --list
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+http.sslbackend=openssl
+diff.astextplain.textconv=astextplain
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+core.editor="C:\\Program Files\\Notepad++\\notepad++.exe" -multiInst -notabbar -nosession -noPlugin
+credential.helper=manager
+user.name=pritha
+user.email=pritha.goswami@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ git commit -am "hello, first commit"
+[master (root-commit) f422c9b] hello, first commit
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 first.txt
+ create mode 100644 second.txt
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ git log
+commit f422c9b8c684aa13824855b1106c41cc739f1031 (HEAD -> master)
+Author: pritha <pritha.goswami@gmail.com>
+Date:   Mon Dec 16 15:10:55 2019 +0530
+
+    hello, first commit
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ git commit -am "hello, my second commit"
+On branch master
+nothing to commit, working tree clean
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ log
+bash: log: command not found
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ git log
+commit f422c9b8c684aa13824855b1106c41cc739f1031 (HEAD -> master)
+Author: pritha <pritha.goswami@gmail.com>
+Date:   Mon Dec 16 15:10:55 2019 +0530
+
+    hello, first commit
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ git add .commit -am "hello, my second commit"
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch[=<patch-mode>]
+                          select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --chmod (+|-)x        override the executable bit of the listed files
+
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ git add commit -am "hello, my second commit"
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch[=<patch-mode>]
+                          select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --chmod (+|-)x        override the executable bit of the listed files
+
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ git log
+commit f422c9b8c684aa13824855b1106c41cc739f1031 (HEAD -> master)
+Author: pritha <pritha.goswami@gmail.com>
+Date:   Mon Dec 16 15:10:55 2019 +0530
+
+    hello, first commit
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ git add .
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ git commit -am "hello, my second commit"
+On branch master
+nothing to commit, working tree clean
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ git log
+commit f422c9b8c684aa13824855b1106c41cc739f1031 (HEAD -> master)
+Author: pritha <pritha.goswami@gmail.com>
+Date:   Mon Dec 16 15:10:55 2019 +0530
+
+    hello, first commit
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        new.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ git add .
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   new.txt
+
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$
+
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ touch anotherfile.txt
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   new.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        anotherfile.txt
+
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ git add .
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   anotherfile.txt
+        new file:   new.txt
+
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ vim anotherfile.txt
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   anotherfile.txt
+        new file:   new.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   anotherfile.txt
+
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ git add .
+warning: LF will be replaced by CRLF in anotherfile.txt.
+The file will have its original line endings in your working directory
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   anotherfile.txt
+        new file:   new.txt
+
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ git commit -am "hello, my second commit"
+[master a2b1e3d] hello, my second commit
+ 2 files changed, 2 insertions(+)
+ create mode 100644 anotherfile.txt
+ create mode 100644 new.txt
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ git add .
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ touch onemore.txt
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ vim onemore.txt
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        onemore.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ git add .
+warning: LF will be replaced by CRLF in onemore.txt.
+The file will have its original line endings in your working directory
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   onemore.txt
+
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ git commit -am "done"
+[master b45ecfa] done
+ 1 file changed, 1 insertion(+)
+ create mode 100644 onemore.txt
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ ^C
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$ ^C
+
+IIHT@CR910 MINGW64 ~/training/firstrepo (master)
+$
