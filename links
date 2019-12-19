@@ -7,3 +7,5 @@ curl -X POST http://6930dbd9.ngrok.io/job/FirstJob/build --user tanoof:1172239a0
 
 
     docker swarm join --token SWMTKN-1-2s3jhsydppr96c1o9d1u1ouwbyqzirx0l4d1l081gjxe0dzvum-b5npplsqsqj4s79vna7xcbrhr 54.91.222.154:2377
+
+Madhu : docker swarm join --token SWMTKN-1-5g0kcxj5fpvn791bizopwa2au8h52a0zbnixbrm30no39tpfiq-4tcq9xcpdd82z7tjf47zwnfln 52.172.32.236:2377
